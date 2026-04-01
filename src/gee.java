@@ -75,16 +75,58 @@ public class gee {
         // }
 
         // }
-        System.out.println("구구단을 가로로 출력하는 프로그램");
-        for (int i = 2; i < 10; i++) {
-            System.out.print("[ " + i + "단 ]" + '\t');
-        }
-        System.out.println();
-        for (int k = 1; k < 10; k++) 
-            for (int j = 2; j < 10; j++){
-                System.out.print(j + "X" + k + "=" + j * k + '\t');
-            System.out.println();
+        // System.out.println("구구단을 가로로 출력하는 프로그램");
+        // for (int i = 2; i < 10; i++) {
+        //     System.out.print("[ " + i + "단 ]" + '\t');
+        // }
+        // System.out.println();
+        // for (int k = 1; k < 10; k++) 
+        //     for (int j = 2; j < 10; j++){
+        //         System.out.print(j + "X" + k + "=" + j * k + '\t');
+        //     System.out.println();
+        //     }
+        //------------------------------------------------------------------------------------------------------------------------------
+        // int sum = 0;
+        // System.out.println("정수 5개를 입력하세요.");
+        // for (int i = 0; i < 5 ; i++){
+        //     int n = sc.nextInt();
+        //     if (n <= 0 ){
+        //         continue;
+        //     }
+        //     else {
+        //         sum += n;
+        //     }
+        // }
+        // System.out.println("양수의 합 : " + sum);
+//------------------------------------------------------------------------------------------------------------------------
+        //break문
+        // System.out.println("exit을 입력하면 종료합니다.");
+        // while  (true){
+        //     System.out.print(">>");
+        //     String text = sc.nextLine();
+            
+        //     if (text.equals("exit")){
+        //         break;
+        //     }
+            
+        // }
+        // System.out.println("프로그램을 종료합니다.");
+        //---------------------------------------------------------------------------------------------------------------
+        int intArray[];
+        intArray = new int[5];
+        //한줄 생성 => int intArray[] = new int[5];
+        int max = 0;
+        System.out.println("양수 5개를 입력하세요");
+
+        for (int i = 0 ; i < 5 ; i++){
+            intArray[i] = sc.nextInt();
+            if (intArray[i] > max){
+                max = intArray[i];
             }
+        }
+        System.out.println("가장 큰수는 " + max + "입니다");
+        
+
 
     }
 }
