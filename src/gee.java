@@ -125,7 +125,6 @@ public class gee {
             }
         }
         System.out.println("가장 큰수는 " + max + "입니다");
-        
 
 
     }
